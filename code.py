@@ -1,5 +1,6 @@
 import os
 import tkinter as tk
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 from tkinter import filedialog, messagebox
 from tkinter import PhotoImage
 from PIL import Image, ImageTk
@@ -146,14 +147,14 @@ root.geometry("600x400")
 root.minsize(610, 600)
 
 # adding background to gui window
-bg_image = tk.PhotoImage(file="KD_Background.png")
+bg_image = tk.PhotoImage(file=os.path.join(BASE_DIR, "KD_Background.png"))
 
 bg_label = tk.Label(root, image=bg_image)
 bg_label.place(relwidth=1, relheight=1)
 
 # This function changes the default icon with kpgu icon
 
-icon = PhotoImage(file="Project_logo.png")
+icon = PhotoImage(file=os.path.join(BASE_DIR, "Project_logo.png"))
 root.iconphoto(False, icon)
 
 # Browse button and icon
