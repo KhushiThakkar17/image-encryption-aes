@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../../Desktop/study/7th sem/CAPSTONE PROJECT"
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			""
+		],
+		"java.debug.settings.onBuildFailureProceed": true
+	}
+}
