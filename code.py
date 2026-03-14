@@ -146,14 +146,14 @@ root.geometry("600x400")
 root.minsize(610, 600)
 
 # adding background to gui window
-bg_image = tk.PhotoImage(file="KD Background.png")
+bg_image = tk.PhotoImage(file="KD_Background.png")
 
 bg_label = tk.Label(root, image=bg_image)
 bg_label.place(relwidth=1, relheight=1)
 
 # This function changes the default icon with kpgu icon
 
-icon = PhotoImage(file="project logo.png")
+icon = PhotoImage(file="Project_logo.png")
 root.iconphoto(False, icon)
 
 # Browse button and icon
@@ -162,7 +162,7 @@ tk.Label(root, text="Select Image File or Encrypted File:", bg="light yellow" , 
 image_entry = tk.Entry(root, width=40)
 image_entry.grid(row=0, column=1, padx=10, pady=10)
 
-img = Image.open("Browse button.png")
+img = Image.open("Browse_button.png")
 resized_img = img.resize((24, 24), Image.LANCZOS)
 
 browse_icon = ImageTk.PhotoImage(resized_img)
@@ -175,7 +175,7 @@ password_entry.grid(row=1, column=1, padx=10, pady=10)
 
 # Encrypt Button and encryption icon
 
-img = Image.open("Encrypt button.png")
+img = Image.open("Encrypt_button.png")
 resized_img = img.resize((24, 24), Image.LANCZOS)
 Encrypt_icon = ImageTk.PhotoImage(resized_img)
 Encrypt_button = tk.Button(root, image=Encrypt_icon, text="Encrypt", bg="tan", compound="left", command=encrypt_button_action)
@@ -183,7 +183,7 @@ Encrypt_button.grid(row=2, column=1, padx=10, pady=10, sticky='w')
 
 # Decrypt Button and decryption icon
 
-img = Image.open("Decrypt button.png")
+img = Image.open("Decrypt_button.png")
 resized_img = img.resize((24, 24), Image.LANCZOS)
 Decrypt_icon = ImageTk.PhotoImage(resized_img)
 Decrypt_button = tk.Button(root, image=Decrypt_icon, text="Decrypt", bg="tan", compound="left", command=decrypt_button_action)
